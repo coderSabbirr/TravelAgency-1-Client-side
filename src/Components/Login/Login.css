@@ -1,0 +1,113 @@
+.google-login {
+  border: 1px solid rgb(235, 222, 222);
+  padding: 10px 155px;
+  background-color: transparent;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+.google-logo img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.login-heading {
+  font-size: 30px;
+  margin-right: 32%;
+  margin-bottom: 80px;
+  font-weight: bold;
+}
+.or-sign {
+  margin-top: 25px;
+  color: #a8a6ad;
+}
+.your-email {
+  border-radius: 15px !important;
+}
+.login-sec input {
+  border-radius: 15px !important;
+  border: 0 !important;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 15px !important;
+}
+.MuiOutlinedInput-input {
+  padding: 15px 0 !important;
+  padding-left: 10px !important;
+}
+.login-btn {
+  border: 1px solid rgb(235, 222, 222);
+  padding: 12px 210px;
+  background-color: #5138ee;
+  font-weight: 500;
+  border-radius: 15px;
+  color: white;
+  margin-top: 10px;
+}
+.create-account {
+  font-size: 18px;
+  padding-top: 25px;
+  padding-right: 130px;
+  font-weight: 500;
+}
+
+.create-new {
+  text-decoration: none;
+  font-weight: 500;
+}
+.new-sign-in {
+  text-decoration: none;
+  font-weight: 500;
+}
+.sign-up-btn {
+  border: 1px solid rgb(235, 222, 222);
+  padding: 12px 200px;
+  background-color: #5138ee;
+  font-weight: 500;
+  border-radius: 15px;
+  color: white;
+  margin-top: 10px;
+}
+
+.Already-account {
+  font-size: 18px;
+  padding-top: 25px;
+  padding-right: 150px;
+  font-weight: 500;
+}
+.admin-dev p {
+  line-height: 0;
+  text-align: left;
+  padding-left: 355px;
+  color: gray;
+}
+@media only screen and (max-width: 688px) {
+  .sign-up-btn {
+    padding: 12px 100px;
+  }
+  .login-btn {
+    padding: 12px 100px;
+  }
+  .create-account {
+    font-size: 14px;
+    padding-top: 25px;
+    padding-right: 0px;
+    font-weight: 500;
+  }
+  .google-login {
+    padding: 10px 50px;
+    background-color: transparent;
+    font-weight: 500;
+    border-radius: 15px;
+  }
+  .Already-account {
+    font-size: 14px;
+    padding-top: 25px;
+    padding-right: 0px;
+    font-weight: 500;
+  }
+  .admin-dev p {
+    padding-left: 60px;
+  }
+}

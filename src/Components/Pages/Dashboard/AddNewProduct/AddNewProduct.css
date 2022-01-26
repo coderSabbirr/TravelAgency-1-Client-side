@@ -1,0 +1,32 @@
+.addproduct-from {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  height: 600px;
+  width: 500px;
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+}
+
+.page-title {
+  background-color: #fcf6f6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+.product-details {
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.add-prodcut {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 688px) {
+  .addproduct-from {
+    height: 600px;
+    width: 330px;
+    margin: 0 !important;
+  }
+}

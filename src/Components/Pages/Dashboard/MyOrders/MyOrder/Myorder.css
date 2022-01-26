@@ -1,0 +1,57 @@
+.my-order-img img {
+  width: 100px;
+  height: 100px;
+}
+.my-order-details {
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+}
+.myorder {
+  background-color: #eff0f4;
+  padding-bottom: 250px;
+}
+.myorder .heading {
+  padding: 40px;
+}
+.my-order-title {
+  padding-left: 10px;
+}
+.myprder-price {
+  margin-left: 20px;
+  color: #f57224;
+  font-weight: 500;
+}
+
+.time-date {
+  font-size: 12px;
+  color: #757575;
+  line-height: 0.5px;
+  text-align: start;
+}
+.order-id {
+  font-size: 14px;
+  line-height: 1;
+  text-align: start;
+}
+
+.status {
+  font-size: 14px;
+  padding: 4px 15px;
+  display: inline-block;
+  border-radius: 24px;
+  background-color: #eff0f5;
+  max-width: 150px;
+  margin-left: 40px;
+}
+.order-cancel-btn {
+  font-size: 14px;
+  padding: 4px 20px;
+  display: inline-block;
+  border-radius: 24px;
+  background-color: red;
+  max-width: 150px;
+  margin-left: 40px;
+  border: 0;
+  color: white;
+}

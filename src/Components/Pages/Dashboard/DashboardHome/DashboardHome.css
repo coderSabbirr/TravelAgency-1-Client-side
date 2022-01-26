@@ -1,0 +1,12 @@
+.dashboardHome {
+  margin: 5%;
+}
+@media only screen and (max-width: 688px) {
+  .dashboardHome {
+    margin: 0;
+  }
+  .dashboardHome img {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,40 @@
+.header ul li a {
+  text-transform: uppercase;
+  color: #6b6b6b !important;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+}
+.header ul li a:hover {
+  color: #8ab7ea !important;
+}
+.user-name {
+  padding-top: 10px;
+  color: rgb(87, 87, 87);
+}
+nav {
+  padding: 25px !important;
+  background-color: #ffffff;
+}
+.header .sign-in {
+  color: #fb5d5d !important;
+  margin-left: 50px;
+}
+.header .dashbord button {
+  background-color: transparent !important;
+  margin-left: 50px;
+  padding: 3px 20px;
+  border-radius: 15px !important;
+}
+.header .user img {
+  width: 55px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 688px) {
+  .dashbord button {
+    background-color: transparent !important;
+    margin-left: 120px;
+    width: 80px;
+    border-radius: 15px !important;
+  }
+}

@@ -1,0 +1,57 @@
+.secured {
+  width: 260px;
+}
+.payment {
+  width: 300px;
+}
+.menu {
+  text-align: start !important;
+}
+.menu .menu-item {
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+.menu .menu-item a {
+  text-decoration: none;
+}
+.menu .menu-item a {
+  text-decoration: none;
+  color: #878787;
+  transition: 0.3s;
+}
+.contect a {
+  text-decoration: none;
+  color: #878787;
+}
+.contect p {
+  color: #878787;
+}
+.menu .menu-item a:hover {
+  color: #56cfe1;
+}
+.menu .menu-item {
+  list-style-type: none;
+}
+.all-menu h3 {
+  font-size: 16px;
+}
+.all-menu li {
+  list-style-type: none;
+}
+
+.contect {
+  text-align: start;
+}
+.footer {
+  background-color: #f6f6f8;
+  padding-top: 60px;
+  margin-top: 70px;
+}
+.copyright {
+  background-color: white;
+  color: #878787;
+  padding-top: 10px;
+}
+.all-menu {
+  padding-bottom: 60px;
+}

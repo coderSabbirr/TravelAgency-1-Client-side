@@ -1,0 +1,39 @@
+.contact-us .heading {
+  text-transform: uppercase;
+  background-color: #767676;
+  padding: 40px;
+  text-align: center;
+}
+.contact-content {
+  padding-top: 100px;
+}
+.contact-us {
+  text-align: start;
+  padding-bottom: 120px;
+}
+.contact-us .sub-heading {
+  margin-bottom: 15px;
+}
+.contact-info {
+  padding-left: 30px;
+}
+.contact-info p {
+  color: #878787;
+}
+.contact-btn {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 1% 47%;
+  border-color: #878787;
+  color: black;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 688px) {
+  .contact-info {
+    padding-top: 50px;
+  }
+  .contact-btn {
+    padding: 1% 45%;
+  }
+}

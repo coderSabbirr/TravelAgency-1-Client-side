@@ -1,0 +1,33 @@
+.dashboard-route {
+  background-color: #8586860c;
+  height: 100vh;
+}
+.home-Breadcrumb a {
+  text-decoration: none;
+  color: black;
+}
+/* media query */
+
+@media only screen and (max-width: 600px) {
+  .dashboard-route {
+    height: 30%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .dashboard-route {
+    height: 30%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .dashboard-route {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dashboard-route {
+    height: 100vh;
+  }
+}
