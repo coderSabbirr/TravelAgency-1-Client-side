@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container header">
-                <Link to="/" className="navbar-brand text-dark " > UNIQUE<span className="text-danger">SHOP</span></Link>
+                <Link to="/" className="navbar-brand text-dark " style={{fontSize:"22px",fontWeight:"bold"}} >Travel Agency</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -20,23 +20,9 @@ const Header = () => {
                         <li className="nav-item">
                             <Link to="/" className="nav-link" >Home</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link to="/product" className="nav-link" >Product</Link>
-                        </li>
-                        <li className="nav-item ">
-                            <Link to="/about" className="nav-link" >About Us</Link>
-                        </li>
                         <li className="nav-item ">
                             <Link to="/contact" className="nav-link" >Contact Us</Link>
                         </li>
-                        <li className="nav-item ">
-                            <Link to="/blogs" className="nav-link" >Blogs</Link>
-                        </li>
-                        {user.email &&
-                            <li className="nav-item ">
-                                <Link to="/mywishlists" className="nav-link" >My Wishlist</Link>
-                            </li>
-                        }
                         {user.email &&
                             <li className="nav-item ">
                                 <Link to="/dashboard" className="nav-link" >Dashboard</Link>

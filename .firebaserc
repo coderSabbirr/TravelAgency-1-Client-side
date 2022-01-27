@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "unique-online-shop"
-  }
+    "default": "travelagency-world",
+  },
+  "targets": {}
 }

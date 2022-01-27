@@ -8,14 +8,14 @@ const Slider = () => {
                     <div className="carousel-item active ">
                        
                             <div>
-                                <img className="slider-img-1" src="https://i.ibb.co/4mJdLg5/banner-1-0158ff1d.png" alt="img1" />
+                                <img className="slider-img-1" style={{height:'670px'}} src="https://i.ibb.co/4mJdLg5/banner-1-0158ff1d.png" alt="img1" />
                             </div>
                     </div>
                     <div className="carousel-item  ">
 
                          
                             <div>
-                                <img style={{height:'674px'}} className="slider-img-1" src="https://i.ibb.co/Kjq1SbF/Screenshot-78.png" alt="img1" />
+                                <img style={{height:'670px'}} className="slider-img-1" src="https://i.ibb.co/Kjq1SbF/Screenshot-78.png" alt="img1" />
                             </div>
 
                        

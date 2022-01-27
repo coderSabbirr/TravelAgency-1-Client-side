@@ -1,0 +1,29 @@
+.blogs .title {
+  font-size: 18px;
+}
+.blogs .category {
+  font-size: 16px;
+  color: gray;
+}
+.blogs .cost {
+  font-size: 16px;
+  color: gray;
+  margin-right: 20px;
+}
+.cost-value {
+  color: rgba(255, 145, 0, 0.986);
+}
+.blogs .book-now {
+  display: flex;
+  justify-content: center;
+}
+.blogs .book-now a {
+  text-decoration: none;
+  background-color: orange;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+.blogs .rating {
+  color: orange;
+}
