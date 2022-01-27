@@ -6,7 +6,7 @@ function Blogs() {
     const[blogs,setBlogs]=useState([])
 
     useEffect(() => {
-fetch('http://localhost:4000/blogs')
+fetch('http://localhost:4000/blogs/approved')
 .then(res => res.json())
 .then(data => setBlogs(data))
 
@@ -20,7 +20,7 @@ fetch('http://localhost:4000/blogs')
                 <div className="blogs-card" >
                 {blogs.map((pd, index) => (
                     <div className="card " style={{ width: '18rem',marginBottom:"30px" }} key={pd._id} >
-                        <Link to={`/blogsView/${pd._id}`}><img className="card-img-top" src={pd.img} alt={pd.title} /></Link>
+                        <Link to={`/blogsView/${pd._id}`}><img style={{height:'192px',width:'285px'}} src={`data:image/png;base64,${pd.image}`}  alt={pd.title}/></Link>
                         <div className="card-body">
                             <h5 style={{ fontSize: "14px" }}>
                                 <Link className="card-text" to={`/blogsView/${pd._id}`} style={{ textDecoration: "none", color: 'black' }}>{pd.title}</Link>

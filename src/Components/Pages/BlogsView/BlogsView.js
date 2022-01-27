@@ -21,7 +21,7 @@ function BlogsView(props) {
                 <div className="container">
                     <div className="d-flex">
                         <div className="" style={{ width: "65%" }}>
-                            <img style={{ width: "95%" }} src={blogs.img} alt="" />
+                            <img style={{ width: "95%" }} src={`data:image/png;base64,${blogs.image}`} alt="" />
                         </div>
                         <div style={{ width: "35%" }}>
                             <h5 className="title">{blogs.title}</h5>
@@ -29,11 +29,11 @@ function BlogsView(props) {
                             <div className="d-flex">
                                 <h5 className="cost">Cost: <span className="cost-value">${blogs.cost}</span></h5>
                                 <h5 style={{ fontSize: "16px" }}>
-                                    {[...Array(ratingNumber)]?.map(star => {
+                                    {/* {[...Array(ratingNumber)]?.map(star => {
                                         return <i
                                             className="fas rating fa-star" />
 
-                                    })}
+                                    })} */}
                                 </h5>
                             </div>
                             <h5 style={{ fontSize: "16px", color: "grey" }}>Location: {blogs.Location}</h5>

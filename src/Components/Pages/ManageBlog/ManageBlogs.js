@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Manageblog from './ManageBlog';
+import './ManageBlogs.css';
+
 function ManageBlogs(props) {
     const [blogs, setBlogs] = useState([])
     useEffect(() => {
@@ -8,21 +10,21 @@ function ManageBlogs(props) {
             .then(data => setBlogs(data))
 
     }, [])
- 
-    return (
-        <div>
-            <div>
-                {
-                    blogs.map(blog=><Manageblog
-                        
-                        key={blog._id}
-                        blog={blog}
-                        />)
-                }
 
-            </div>
+return (
+    <div>
+        <div className="blogsmanage" >
+            {
+                blogs.map(blog => <Manageblog
+
+                    key={blog._id}
+                    blog={blog}
+                />)
+            }
+
         </div>
-    );
+    </div>
+);
 }
 
 export default ManageBlogs;

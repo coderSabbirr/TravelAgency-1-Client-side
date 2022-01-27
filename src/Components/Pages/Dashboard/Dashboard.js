@@ -25,8 +25,9 @@ const Dashboard = () => {
                             <Nav className="d-flex flex-column" >
                                 {admin && <div>
                                     <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/manageBlogs"> <i className="fas fa-shopping-bag"></i> Manange Blogs</Nav.Link><br />
-                                    <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/manageallproducts"> <FontAwesomeIcon icon={faTasks} /> Add Blogs</Nav.Link><br />
-                                    <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/manageallproducts"> <FontAwesomeIcon icon={faTasks} /> Add Blogs</Nav.Link><br />
+                                    <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/blogsstatus"> <i className="fas fa-shopping-bag"></i>Status update</Nav.Link><br />
+                                    <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/blogsaddAdmin"> <FontAwesomeIcon icon={faTasks} />Add Blogs(Admin)</Nav.Link><br />
+                                    <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/useraddblogs"> <FontAwesomeIcon icon={faTasks} /> Add Blogs</Nav.Link><br />
                                     <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/makeadmin"><FontAwesomeIcon icon={faUserShield} /> Make Admin</Nav.Link><br />
                                 </div>}
                                 <hr className="w-100 mx-auto text-dark" />
