@@ -18,7 +18,7 @@ function BlogsaddAdmin(props) {
         formData.append('status', status)
         formData.append('useremail', user.email)
 
-        fetch(`http://localhost:4000/blogs`, {
+        fetch(`https://stormy-mountain-53016.herokuapp.com/blogs`, {
             method: "POST",
             body: formData
         })

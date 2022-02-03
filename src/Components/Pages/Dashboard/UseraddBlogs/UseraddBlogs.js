@@ -18,7 +18,7 @@ function UseraddBlogs(props) {
         formData.append('status',status )
         formData.append('useremail',user.email )
         formData.append('username',user.displayName )
-        fetch(`http://localhost:4000/blogs`, {
+        fetch(`https://stormy-mountain-53016.herokuapp.com/blogs`, {
             method: "POST",
             body: formData
         })

@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../../Shared/Header/Header';
-import './../ProductView/ProductView.css';
+import './Spinner.css';
+
 const Spinner = () => {
     return (
-        <> <Header />
-                <div className="d-flex justify-content-center mt-5 product-view-loading ">
+        <div>
+             <div className="d-flex justify-content-center product-view-loading  " style={{marginTop:'100px'}}>
                     <svg width="200" height="200" viewBox="0 0 100 100">
                         <polyline className="line-cornered stroke-still" points="0,0 100,0 100,100" strokeWidth="10" fill="none"></polyline>
                         <polyline className="line-cornered stroke-still" points="0,0 0,100 100,100" strokeWidth="10" fill="none"></polyline>
@@ -18,8 +18,7 @@ const Spinner = () => {
                     </svg>
 
                 </div>
-                
-            </>
+        </div>
     );
 };
 

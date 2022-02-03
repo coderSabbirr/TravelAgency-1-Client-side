@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 
 
 
-function ManageBlog({ blog }) {
+function Myblog({ blog }) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -131,4 +131,4 @@ function ManageBlog({ blog }) {
     );
 }
 
-export default ManageBlog;
+export default Myblog;

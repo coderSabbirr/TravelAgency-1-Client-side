@@ -27,3 +27,16 @@
 .blogs .rating {
   color: orange;
 }
+@media only screen and (max-width: 688px) {
+  .bllgsview-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .bllgsview-content .image-dev {
+    width: 100% !important;
+  }
+  .conten-dev {
+    width: 100% !important;
+    margin-top: 30px;
+  }
+}

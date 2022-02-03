@@ -68,8 +68,8 @@ const handleGoogleSignIn = () => {
                      
                         <p className="create-account">Not registered yet? <NavLink to="/register" className="create-new">Create an Account</NavLink></p>
                         <div className="admin-dev">
-                <p>Email:admin@admin.com</p>
-                <p>Password:123456</p>
+                <p>Email:test@test.com</p>
+                <p>Password:#2021devs</p>
                 </div>
                 </form>
                 

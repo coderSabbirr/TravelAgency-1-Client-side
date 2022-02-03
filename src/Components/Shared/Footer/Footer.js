@@ -6,7 +6,7 @@ const Footer = () => {
 
         <div className="footer">
             <div className="container all-menu">
-                <div className="row">
+                <div className="row" style={{marginLeft:'auto', marginRight:'auto',justifyContent:"space-between"}}>
                     <div className="contect col-lg-3 col-md-6 col-12  order-lg-1 ">
                         <h3><i className="fas fa-headphones"></i><span className="ms-1">GOT QUESTIONS ?</span></h3>
                         <p >(001) 2345-6789</p>
@@ -14,27 +14,6 @@ const Footer = () => {
                         <p><i className="fas fa-map-marker-alt"></i><span className="ms-1">184 Main Rd E, St Albans<br />
                             VIC 3021, Australia</span></p>
                         <a href="mailto:contact@company.com"><i className="fas fa-envelope"></i><span className="ms-1">contact@company.com</span></a>
-                    </div>
-                    <div className="col-lg-2 col-md-6 col-12  order-lg-1 ">
-
-                        <ul className="menu">
-                            <h3>Categories</h3>
-                            <li className="menu-item">
-                                <Link to="/">Men</Link>
-                            </li>
-                            <li className="menu-item">
-                                <Link to="/">Women</Link>
-                            </li>
-                            <li className="menu-item">
-                                <Link to="/">Accessories</Link>
-                            </li>
-                            <li className="menu-item">
-                                <Link to="/">Shoes</Link>
-                            </li>
-                            <li className="menu-item">
-                                <Link to="/">Denim</Link>
-                            </li>
-                        </ul>
                     </div>
                     <div className="col-lg-2 col-md-6 col-12  order-lg-1 ">
 
@@ -49,12 +28,7 @@ const Footer = () => {
                             <li className="menu-item">
                                 <Link to="/">Terms & Conditions</Link>
                             </li>
-                            <li className="menu-item">
-                                <Link to="/">Returns & Exchanges</Link>
-                            </li>
-                            <li className="menu-item">
-                                <Link to="/">Shipping & Delivery</Link>
-                            </li>
+                           
                         </ul>
                     </div>
                     <div className="col-lg-2 col-md-6 col-12  order-lg-1 ">

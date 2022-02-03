@@ -13,6 +13,7 @@ import MakeAdmin from './Components/Pages/Dashboard/MakeAdmin/MakeAdmin';
 import UseraddBlogs from './Components/Pages/Dashboard/UseraddBlogs/UseraddBlogs';
 import Home from './Components/Pages/Home/Home';
 import ManageBlogs from './Components/Pages/ManageBlog/ManageBlogs';
+import Myblogs from './Components/Pages/Myblogs/Myblogs';
 import NotFound from './Components/Pages/NotFound/NotFound';
 import AdminRoute from './Components/ProtectedRoute/AdminRoute';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
@@ -40,8 +41,9 @@ function App() {
             </Route>
               <Route path="/dashboard/blogsaddAdmin" element={<AdminRoute ><BlogsaddAdmin /></AdminRoute>} ></Route>
               <Route path="/dashboard/blogsstatus" element={<AdminRoute ><BlogsStatusUpdates /></AdminRoute>} ></Route>
-              <Route path="/dashboard/useraddblogs" element={<AdminRoute ><UseraddBlogs /></AdminRoute>} ></Route>
+              <Route path="/dashboard/useraddblogs" element={<ProtectedRoute ><UseraddBlogs /></ProtectedRoute>} ></Route>
               <Route path="/dashboard/manageBlogs" element={<AdminRoute ><ManageBlogs /></AdminRoute>} ></Route>
+              <Route path="/dashboard/myblogs" element={<ProtectedRoute ><Myblogs /></ProtectedRoute>} ></Route>
               <Route path="/dashboard/makeadmin" element={<AdminRoute ><MakeAdmin /></AdminRoute>} ></Route>
       
             </Route>

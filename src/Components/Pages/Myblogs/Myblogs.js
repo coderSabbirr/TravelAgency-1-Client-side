@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import useAuth from '../../Hook/useAuth';
+import '../../Pages/ManageBlog/ManageBlogs.css';
 import Spinner from '../../Spinner/Spinner';
-import Manageblog from './ManageBlog';
-import './ManageBlogs.css';
+import Myblog from './Myblog';
 
-function ManageBlogs(props) {
+function Myblogs(props) {
+    const{user}=useAuth()
     const [isloading, setIsLoading] = useState(true);
     const [blogs, setBlogs] = useState([])
     useEffect(() => {
-        fetch('https://stormy-mountain-53016.herokuapp.com/manageblog')
-        
+        fetch(`https://stormy-mountain-53016.herokuapp.com/myblogs/${user.email}`)
             .then(res => res.json())
             .then(data => setBlogs(data))
             .finally(() => setIsLoading(false))
@@ -27,7 +28,7 @@ return (
     <div>
         <div className="blogsmanage" >
             {
-                blogs?.map(blog => <Manageblog
+                blogs.map(blog => <Myblog
 
                     key={blog._id}
                     blog={blog}
@@ -40,4 +41,4 @@ return (
         }
 }
 
-export default ManageBlogs;
+export default Myblogs;

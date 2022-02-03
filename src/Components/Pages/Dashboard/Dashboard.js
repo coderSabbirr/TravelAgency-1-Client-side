@@ -23,13 +23,21 @@ const Dashboard = () => {
                         <Navbar.Toggle className="me-auto text-start" aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse className="me-auto text-start" id="responsive-navbar-nav">
                             <Nav className="d-flex flex-column" >
-                                {admin && <div>
-                                    <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/manageBlogs"> <i className="fas fa-shopping-bag"></i> Manange Blogs</Nav.Link><br />
+                                {admin ?
+                                   <>
+                                   <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/manageBlogs"> <i className="fas fa-shopping-bag"></i> Manange Blogs</Nav.Link><br />
                                     <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/blogsstatus"> <i className="fas fa-shopping-bag"></i>Status update</Nav.Link><br />
                                     <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/blogsaddAdmin"> <FontAwesomeIcon icon={faTasks} />Add Blogs(Admin)</Nav.Link><br />
-                                    <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/useraddblogs"> <FontAwesomeIcon icon={faTasks} /> Add Blogs</Nav.Link><br />
                                     <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/makeadmin"><FontAwesomeIcon icon={faUserShield} /> Make Admin</Nav.Link><br />
-                                </div>}
+                                   </>:
+                                   <>
+                                     <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/useraddblogs"> <FontAwesomeIcon icon={faTasks} /> Add Blogs</Nav.Link><br />
+                                    <Nav.Link className='text-dark fw-bold' as={Link} to="/dashboard/myblogs"> <FontAwesomeIcon icon={faTasks} />My blogs</Nav.Link><br />
+                                    
+                                   </>
+
+                                  
+                              }
                                 <hr className="w-100 mx-auto text-dark" />
                                 <h6 className="text-dark ">{admin ? <FontAwesomeIcon icon={faUserShield} /> : <FontAwesomeIcon icon={faUser} />}   {user.displayName}</h6>
                                 <Link to="/"><Button variant="dark" onClick={logOut}><FontAwesomeIcon icon={faSignOutAlt} /> Logout</Button></Link>

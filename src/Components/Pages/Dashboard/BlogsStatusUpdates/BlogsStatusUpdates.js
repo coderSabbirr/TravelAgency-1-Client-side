@@ -5,14 +5,14 @@ function BlogsStatusUpdates(props) {
     const [status, setStatus] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:4000/blogs/pandding')
+        fetch('https://stormy-mountain-53016.herokuapp.com/blogs/pandding')
             .then(res => res.json())
             .then(data => setStatus(data))
     }, [])
 
     return (
         <div className="manageorder">
-            <h1>All Order</h1>
+            <h5 style={{textAlign: 'center' ,marginBottom:"30px"}}>Blogs Status Update</h5>
             <div className="container">
                 <table className="table table-bordered border-dark ">
                     <thead className="table-dark ">

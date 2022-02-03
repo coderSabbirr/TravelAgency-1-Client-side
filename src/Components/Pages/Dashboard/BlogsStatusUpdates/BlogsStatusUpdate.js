@@ -5,7 +5,7 @@ function BlogsStatusUpdate({ statu }) {
     const status = 'approved';
     const updateStatus = (id) => {
         formData.append('status', 'approved')
-        const url = `http://localhost:4000/status/${id}`;
+        const url = `https://stormy-mountain-53016.herokuapp.com/status/${id}`;
         fetch(url, {
             method: 'PUT',
             body: formData
